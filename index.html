@@ -11,6 +11,7 @@
 			href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
+		<script src="https://kit.fontawesome.com/2134d26be7.js" crossorigin="anonymous"></script>
 		<title>Fylo</title>
 	</head>
 	<body>
@@ -22,45 +23,70 @@
 				<a><li>Sign In</li></a>
 			</ul>
 		</nav>
-		<section class="hero">
+		<section class="hero-section">
 			<img src="./images/illustration-1.svg" alt="Photo of team members digging through files." />
-			<h2>All your files in one secure location, accessible anywhere.</h2>
-			<p>
-				Fylo stores your most important files in one secure location. Access them wherever you need,
-				share and collaborate with friends, family, and co-workers.
-			</p>
-			<input type="email" placeholder="Enter your email..." />
-			<button>Get Started</button>
-		</section>
-		<section>
-			<img src="./images/illustration-2.svg" alt="Photo of team members in planning stage." />
-			<h2>Stay productive, wherever you are</h2>
-			<p>
-				Never let location be an issue when accessing your files. Fylo has you covered for all of
-				your file storage needs.
-			</p>
-			<p>
-				Securely share files and folders with friends, family and colleagues for live collaboration.
-				No email attachments required!
-			</p>
-			<a>See how Fylo works</a>
 			<div>
-				Fylo has improved our team productivity by an order of magnitude. Since making the switch
-				our team has become a well-oiled collaboration machine.
+				<h2>All your files in one secure location, accessible anywhere.</h2>
+				<p>
+					Fylo stores your most important files in one secure location. Access them wherever you
+					need, share and collaborate with friends, family, and co-workers.
+				</p>
+				<input type="email" placeholder="Enter your email..." />
+				<button>Get Started</button>
 			</div>
 		</section>
-		<section>
-			<h2>Get early access today</h2>
-			<p>
-				It only takes a minute to sign up and our free starter tier is extremely generous. if you
-				have any questions, our support team would be happy to help you.
-			</p>
-			<input type="email" />
-			<button>Get Started for Free</button>
+		<section class="info-section">
+			<img src="./images/bg-curve-mobile.svg" class="background" />
+			<img src="./images/illustration-2.svg" alt="Photo of team members in planning stage." />
+			<div>
+				<h2>Stay productive, wherever you are</h2>
+				<p>
+					Never let location be an issue when accessing your files. Fylo has you covered for all of
+					your file storage needs.
+				</p>
+				<p>
+					Securely share files and folders with friends, family and colleagues for live
+					collaboration. No email attachments required!
+				</p>
+				<a
+					>See how Fylo works
+					<img src="./images/icon-arrow.svg" alt="Click here to see how Fylo works."
+				/></a>
+				<div class="card">
+					<img src="images/icon-quotes.svg" alt="Icon of a quotation mark" />
+					<p>
+						Fylo has improved our team productivity by an order of magnitude. Since making the
+						switch our team has become a well-oiled collaboration machine.
+					</p>
+					<div class="profile-container">
+						<img src="./images/avatar-testimonial.jpg" alt="Image of Kyle Burton" />
+						<div class="profile-info">
+							<h3>Kyle Burton</h3>
+							<p>Founder & CEO, Huddle</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="early-section">
+			<div>
+				<h2>Get early access today</h2>
+				<p>
+					It only takes a minute to sign up and our free starter tier is extremely generous. if you
+					have any questions, our support team would be happy to help you.
+				</p>
+			</div>
+			<div>
+				<input type="email" placeholder="email@example.com" required />
+				<button>Get Started for Free</button>
+			</div>
 		</section>
 		<footer>
-			<p>Phone: +1-543-123-4567</p>
-			<p>example@fylo.com</p>
+			<div>
+				<img src="./images/logo-white.svg" alt="Fylo logo" />
+				<p><img src="./images/icon-phone.svg" alt="Phone icon" />Phone: +1-543-123-4567</p>
+				<p><img src="./images/icon-email.svg" alt="Email icon" />example@fylo.com</p>
+			</div>
 			<ul>
 				<li>About us</li>
 				<li>Jobs</li>
@@ -72,7 +98,11 @@
 				<li>Terms</li>
 				<li>Privacy</li>
 			</ul>
-			<div>Facebook Twitter Instagram</div>
+			<div class="social-row">
+				<i class="fab fa-facebook-f"></i>
+				<i class="fab fa-twitter"></i>
+				<i class="fab fa-instagram"></i>
+			</div>
 		</footer>
 	</body>
 </html>

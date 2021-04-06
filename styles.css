@@ -14,7 +14,7 @@
 }
 
 body {
-	background-color: #f9fafb;
+	background-color: white;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -25,9 +25,21 @@ h4,
 h5,
 h6 {
 	font-family: 'Raleway', sans-serif;
+	text-align: center;
 }
 
+::placeholder {
+	color: #9ca3af;
+	font-size: 0.8rem;
+}
+
+/****************************
+NAVIGATION TOP BAR
+*****************************/
+
 nav {
+	padding: 20px;
+	padding-right: 5px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -35,51 +47,324 @@ nav {
 
 nav img {
 	height: 1.5rem;
+	cursor: pointer;
 }
 
 nav ul {
 	width: 100%;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: flex-end;
 	list-style: none;
+	margin: 0 20px;
 }
 
 nav ul li {
 	cursor: pointer;
+	font-size: 0.8rem;
+	margin-left: 30px;
+	color: var(--primary-dark-blue);
 }
 
 nav ul li:hover {
 	color: var(--accent-cyan);
 }
 
-.hero {
+/****************************
+HERO SECTION
+*****************************/
+
+.hero-section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 0 5%;
 }
 
-.hero img {
-	max-width: 80%;
+.hero-section img {
+	margin-top: 70px;
+	max-width: 100%;
 }
 
-.hero h2 {
+.hero-section h2 {
+	margin-top: 50px;
 	text-align: center;
+	color: var(--primary-dark-blue);
 }
 
-.hero p {
+.hero-section p {
+	width: 90%;
 	text-align: center;
+	margin-top: 30px;
+	font-size: 0.9rem;
+	color: var(--primary-dark-blue);
 }
 
-.hero input {
+.hero-section input {
 	width: 90%;
 	border: 1px solid black;
 	border-radius: 0.2rem;
+	margin-top: 20px;
+	padding: 10px 20px;
 }
 
-.hero button {
+.hero-section button {
 	width: 90%;
 	background-color: var(--accent-bright-blue);
 	color: white;
 	border: none;
 	border-radius: 0.2rem;
+	margin-top: 20px;
+	padding: 10px 20px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.hero-section button:hover {
+	background-color: hsl(224, 93%, 68%);
+}
+
+/****************************
+INFO SECTION
+*****************************/
+
+.info-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 125px;
+	background-color: #f8f8fe;
+	padding-bottom: 80px;
+}
+/* ORIGINAL FILL IS #F8F8FE I CHANGED IT SO THAT I COULD FREAKIN SEE IT */
+
+.info-section .background {
+	height: 50px;
+	width: 100%;
+	max-width: none;
+	position: relative;
+	top: -50px;
+	left: 0;
+}
+
+.info-section img {
+	max-width: 85%;
+}
+
+.info-section > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.info-section > div > h2 {
+	color: var(--primary-dark-blue);
+	font-size: 1rem;
+	margin-top: 80px;
+}
+
+.info-section > div > p {
+	padding: 0 20px;
+	font-size: 0.9rem;
+	color: #4b5563;
+	margin-top: 20px;
+}
+
+.info-section > div > a {
+	margin-top: 40px;
+	font-size: 0.8rem;
+	color: var(--accent-cyan);
+	border-bottom: 1px solid var(--accent-cyan);
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.info-section a:hover {
+	color: hsl(170, 45%, 53%);
+}
+
+.info-section a > img {
+	margin-left: 5px;
+	margin-bottom: -2px;
+}
+
+.card {
+	margin-top: 40px;
+	padding: 20px;
+	width: 80%;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 0.2rem;
+}
+
+.card > p {
+	font-size: 0.7rem;
+	font-weight: 700;
+	color: var(--primary-dark-blue);
+	margin-top: 10px;
+}
+
+.profile-container {
+	display: flex;
+	align-items: center;
+	margin-top: 16px;
+}
+
+.profile-container img {
+	max-height: 25px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.profile-info p {
+	font-size: 0.7rem;
+	color: #4b5563;
+}
+
+.profile-info h3 {
+	text-align: start;
+	font-size: 0.8rem;
+	color: var(--primary-dark-blue);
+}
+
+/****************************
+EARLY ACCESS SECTION
+*****************************/
+
+.early-section {
+	padding: 50px 40px;
+	background-color: var(--primary-desat-blue);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.early-section > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.early-section > div > h2 {
+	font-size: 1rem;
+}
+
+.early-section > div > p {
+	margin-top: 20px;
+	text-align: center;
+	font-size: 0.9rem;
+}
+
+.early-section > div > input {
+	width: 80%;
+	margin-top: 20px;
+	background-color: white;
+	padding: 10px;
+	border: 1px solid gray;
+	border-radius: 3px;
+	height: 30px;
+}
+
+.early-section > div > button {
+	width: 80%;
+	margin-top: 10px;
+	border: none;
+	border-radius: 3px;
+	height: 30px;
+	color: white;
+	background-color: var(--accent-bright-blue);
+	font-size: 0.6rem;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.early-section ::placeholder {
+	font-size: 0.6rem;
+}
+
+/****************************
+FOOTER SECTION
+*****************************/
+
+footer {
+	background-color: var(--primary-dark-blue);
+	color: white;
+	font-size: 0.9rem;
+	padding: 50px;
+}
+
+footer > div > img {
+	margin-bottom: 20px;
+}
+
+footer > div > p {
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+footer > div > p:hover {
+	color: var(--primary-desat-blue);
+}
+
+footer > div > p img {
+	margin-right: 18px;
+	margin-bottom: -4px;
+}
+
+footer > ul:first-of-type {
+	margin: 40px 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-items: space-evenly;
+	gap: 10px;
+}
+
+footer > ul:last-of-type {
+	margin: 40px 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-items: space-evenly;
+	gap: 10px;
+}
+
+footer > ul > li {
+	cursor: pointer;
+}
+
+footer > ul > li:hover {
+	color: var(--primary-desat-blue);
+}
+
+.social-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+
+.social-row i {
+	border: 1px solid white;
+	border-radius: 50%;
+	padding: 6px;
+	font-size: 12px;
+	text-align: center;
+	flex-shrink: 0;
+	flex-grow: 0;
+	cursor: pointer;
+}
+
+/* Custom padding for the Facebook icon because it is not square */
+.social-row i:first-of-type {
+	padding: 6px 8px;
+}
+
+.social-row i:hover {
+	border: 1px solid var(--primary-desat-blue);
+	color: var(--primary-desat-blue);
 }
