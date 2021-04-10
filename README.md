@@ -25,6 +25,8 @@ Move into the created directory
 The user can view the optimal layout for the site depending on their device's screen size and
 see hover states for all the interactive elements on the page.
 
+![Fylo Landing Page Demo](https://media.giphy.com/media/1qgZQ1gHU5IBf2Wuye/giphy.gif)
+
 ## Contributing
 This project is not accepting contributions. You are welcome to modify and distribute any versions as you please.
 
